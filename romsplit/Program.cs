@@ -237,7 +237,8 @@ namespace romsplit
                         while (count < inputData.Length)
                         {
                             file1.WriteByte(inputData[count]);
-                            count++; count++;
+                            count++;
+                            if(splitRequired) count++;
                         }
                         spinCount++;
                     }
